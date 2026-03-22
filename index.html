@@ -11,11 +11,13 @@ body {
     text-align: center;
     font-family: Arial, sans-serif;
     background: linear-gradient(#fff7cc, #ffe680);
+    overflow: hidden;
 }
 
 h1 {
     margin-top: 80px;
     color: #b8860b;
+    animation: aparecer 2s ease-in-out;
 }
 
 .ramo {
@@ -23,9 +25,25 @@ h1 {
     margin-top: 40px;
 }
 
+.girasol {
+    display: inline-block;
+    animation: flotar 3s infinite ease-in-out;
+}
+
 p {
     margin-top: 30px;
     font-size: 20px;
+    animation: aparecer 3s ease-in-out;
+}
+
+@keyframes flotar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes aparecer {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 </style>
 </head>
@@ -35,9 +53,23 @@ p {
 <h1>Un detalle para ti 💛</h1>
 
 <div class="ramo">
-🌻🌻🌻🌻🌻<br>
-🌻🌻🌻🌻🌻<br>
-🌻🌻🌻🌻🌻
+<span class="girasol">🌻</span>
+<span class="girasol">🌻</span>
+<span class="girasol">🌻</span>
+<span class="girasol">🌻</span>
+<span class="girasol">🌻</span>
+<br>
+<span class="girasol">🌻</span>
+<span class="girasol">🌻</span>
+<span class="girasol">🌻</span>
+<span class="girasol">🌻</span>
+<span class="girasol">🌻</span>
+<br>
+<span class="girasol">🌻</span>
+<span class="girasol">🌻</span>
+<span class="girasol">🌻</span>
+<span class="girasol">🌻</span>
+<span class="girasol">🌻</span>
 </div>
 
 <p>Espero que te guste 😊</p>
